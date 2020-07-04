@@ -9,5 +9,14 @@ jobs:
     name: Lighthouse
     runs-on: ubuntu-latest
     steps:
+        - uses: actions/checkout@v2 
         - name: Lighthouse CI Action
-        - uses: treosh/lighthouse-ci-action@v3
+          uses: treosh/lighthouse-ci-action@v3
+          with:
+            urls: |
+              https://stable.publiclab.org/
+              https://stable.publiclab.org/notes/
+              
+            configPath: './lighthouserc.json'
+            uploadArtifacts: true # save results as an action artifacts
+            temporaryPublicStorage: true # upload lighthouse report to the temporary storage:  
