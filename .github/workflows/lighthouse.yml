@@ -1,7 +1,7 @@
 name: CI
 on:
   push:
-    branches: [ main ]
+    branches: [ main, lighthouse-1 ]
   pull_request:
     branches: [ main ]
 jobs:
