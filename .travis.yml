@@ -78,3 +78,5 @@ branches:
     - main
     - unstable
     - codecov
+    - lighthouse
+    - master
