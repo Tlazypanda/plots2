@@ -3,3 +3,6 @@
 authentication: owy1-Y6WYTcho--YF46Mj8z0OQtYaCxHY-lkPlPZueg
 ignored_endpoints:
   - UsersController#profile
+staging:                                 # Rails environment
+  env: <%= ENV['SKYLIGHT_ENV'] || 'production' %> # Skylight environment
+
